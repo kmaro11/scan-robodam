@@ -1,8 +1,8 @@
 {
     "welcome": "Welcome to our site!",
     "home": {
-        "heroTitle": "Something",
-        "heroDescription": "",
+        "heroTitle": "The smart system makes accounting easier and faster, reads data from invoices in various formats",
+        "heroDescription": "If a person can read the account, so can .",
         "whyTitle":"",
         "whyItemOne":"",
         "whyItemTwo":"",
