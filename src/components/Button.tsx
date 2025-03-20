@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
       className={twMerge(
         "flex items-center rounded-[5px] justify-center rounded-lg hover:shadow-md text-center capitalize font-bold",
         size === "normal"
-          ? "px-4 py-2.5 text-[40px] leading-[49px]"
+          ? "px-4 py-2.5 text-2xl md:text-[40px] md:leading-[49px]"
           : "px-3 py-1.5",
         variant === "primary"
           ? "bg-blue text-white"
