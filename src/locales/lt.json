@@ -1,0 +1,46 @@
+{
+    "welcome": "Welcome to our site!",
+    "home": {
+        "heroTitle": "Kazkas",
+        "heroDescription": "",
+        "whyTitle":"",
+        "whyItemOne":"",
+        "whyItemTwo":"",
+        "whyItemThree":"",
+        "whyItemFour":"",        
+        "whyItemFive":"",        
+        "whyItemSix":"",
+        "howTitle":"",
+        "howItemOne":"",
+        "howItemTwo":"",
+        "payTitle":"",
+        "paySubtitle":"",
+        "paytextFirst":"",
+        "paytextSecond":"",
+        "paytextThird":"",
+        "scansTitle":"",
+        "scanItemOne":"",
+        "scanItemTwo":"",
+        "scanItemThree":"",
+        "scanItemFour":"",
+        "scanItemFive":"",
+        "scanItemSix":"",
+        "scanItemSeven":"",
+        "scanItemEight":"",
+        "scanItemNine":"",
+        "scanItemTen":"",
+        "scanItemEleven":"",
+        "scanItemTwelve":""
+    },
+    "common": {
+        "login": "login",
+        "register": "register"
+    },
+    "navigation": {
+        "howItWorks": "How it works",
+        "contacts": "Contacts",
+        "price": "Price",
+        "privacyPolicy": "Privacy Policy",
+        "followUs": "Follow our news"
+    }
+}
