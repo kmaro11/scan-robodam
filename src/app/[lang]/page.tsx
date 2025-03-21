@@ -2,7 +2,7 @@
 import { Button } from "@/components/Button";
 import { useI18n } from "@/contexts/I18nContext";
 
-export default function LangHome({ params }: { params: { lang: string } }) {
+export default function Home() {
   const { t } = useI18n();
   const whyItems = [
     "whyItemOne",

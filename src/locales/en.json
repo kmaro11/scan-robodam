@@ -43,12 +43,28 @@
         "scanItemTwenty":"Assigns a VAT classifier;",
         "scanItemTwentyOne":"Adds the account to the non-closed VAT period;"
     },
+    "prices": {
+        "title": "You pay for what you use",
+        "subtitle": "Robodam Scan is charged per document per month and you pay as you upload documents. The cost per document is calculated based on the number of documents uploaded per month according to this pricing table:",
+        "tableColOne": "Doc. count",
+        "tableColTwo": "Discount on doc. price",
+        "tableColThree": "Document price*",
+        "tableColFour": "Average doc. price",
+        "cents": "cents",
+        "pieces": "pieces",
+        "textOne": "Cost per line for digitizing a detailed document",
+        "textTwo": "Minimum number of charged lines",
+        "forExample":"For example: ",
+        "example": "You uploaded 1300 documents, you will pau: 250 * 0,3 + 250 * 0,285 + 500 * 0,27 + 300 * 0,255 = 358,75€ + VAT. On average, one document will cost 27,5 cents.",
+        "exempt": "Exempt: ",
+        "exemptText": "duplicate documents, non-invoices and unreadable documents. *Prices do not include VAT. We issue an invoice for the services on the last day of the month for all processed documents."
+    },
     "common": {
         "login": "login",
         "register": "register"
     },
     "navigation": {
-        "howItWorks": "How it works",
+        "howItWorks": "How it works?",
         "contacts": "Contacts",
         "price": "Price",
         "privacyPolicy": "Privacy Policy",

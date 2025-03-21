@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { I18nProvider } from "@/contexts/I18nContext";
 import { ReactNode } from "react";
 
@@ -10,7 +11,14 @@ export default async function LangLayout({ children, params }: LayoutProps) {
   const { lang } = await Promise.resolve(params);
   console.log("Current language:", lang);
 
-  return <I18nProvider lang={lang}>{children}</I18nProvider>;
+  return (
+    <I18nProvider lang={lang}>
+      <div className="pt-[126px]">
+        {/* <Header lang={lang} /> */}
+        {children}
+      </div>
+    </I18nProvider>
+  );
 }
 
 export function generateStaticParams() {
