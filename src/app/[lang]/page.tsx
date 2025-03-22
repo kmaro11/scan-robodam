@@ -198,7 +198,7 @@ export default function Home() {
           <h2 className="text-blue mb-10 text-center md:mb-20 text-xl md:text-[30px] md:leading-[40px]">
             {t("home.scansTitle")}:
           </h2>
-          <ul className="list-disc p-0 pl-10 m-0 flex flex-col gap-y-2">
+          <ul className="list-disc p-0 pl-5 md:pl-11 m-0 flex flex-col gap-y-2">
             {scanList.map((item) => (
               <li className="text-xl md:text-[30px] md:leading-[40px]">
                 {t(`home.${item}`)}

@@ -59,6 +59,34 @@
         "exempt": "Exempt: ",
         "exemptText": "duplicate documents, non-invoices and unreadable documents. *Prices do not include VAT. We issue an invoice for the services on the last day of the month for all processed documents."
     },
+    "howItWorks": {
+        "title": "How does “Robodam scan” work?",
+        "functionalities": "Functionalities",
+        "whatScan": "What does “Robodam Scan” scan?",
+        
+        "textOne": "{scan} is a service for digitizing and importing purchase and sales invoices into the accounting system.",
+        "textTwo": "The digitization of {scan} brings together the accounts faster, better and cheaper than what a person can do by hand. The system understands invoices in any format and in any language and does not require any additional preparation, configuration or intervention from you.",
+        "subtitle": "Using “Robodam Scan” an accountant uploads invoices to his accounting system in 3 steps:",
+        "step1": "The accountant receives a personal connection to the {scan} system, through which he uploads purchase/sale invoices.",
+        "step2": "The {scan} system scans them and prepares them for import into the accounting system. The accountant connects to {scan} and takes account data in the appropriate format for his accounting program.",
+        "step3": "The accountant then imports the account data into his accounting program using the standard functionality of the accounting program.",
+        "functionalitiesOneLeft": "50x faster reconciliation of accounts",
+        "functionalitiesOneRight": "Processes large amounts of invoices at once",
+        "functionalitiesTwoLeft": "Eliminates human, careless errors",
+        "functionalitiesTwoRight": "Company details are checked at the Register Center",
+        "functionalitiesThreeLeft": "5x cheaper than manual guidance",
+        "functionalitiesThreeRight": "Reads information from invoices in various formats",
+        "functionalitiesFourLeft": "Sorts accounts by company automatically",
+        "functionalitiesFourRight": "Integration with accounting programs",
+        "functionalitiesFiveLeft": "Reads bills in foreign languages ​​as well",
+        "functionalitiesFiveRight": "Secure eArchive",
+        "functionalitiesSixLeft": "The system can be accessed from anywhere",
+        "functionalitiesSixRight": "You can send invoices by e-mail",
+        "functionalitiesSevenLeft": "You can transfer the eArchive to GDrive",
+        "functionalitiesSevenRight": "You can import invoices from GDrive",
+        "functionalitiesEightLeft": "You can have as many connections as you need",
+        "functionalitiesEightRight": "Only processed invoices are charged"
+    },
     "common": {
         "login": "login",
         "register": "register"
