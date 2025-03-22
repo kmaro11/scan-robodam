@@ -93,7 +93,7 @@ export default function HowItWorks() {
           {t("howItWorks.subtitle")}
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-10 lg:mt-[122px]">
+        <div className="relative -z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-10 lg:mt-[122px]">
           <div className="flex items-start space-x-5 lg:col-span-5">
             <span className="text-6xl xl:text-[120px] xl:leading-[144px] font-bold text-blue transform lg:-translate-y-10 xl:-translate-y-[72px]">
               1
