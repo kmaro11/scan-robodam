@@ -2,16 +2,24 @@
 
 import { useI18n } from "@/contexts/I18nContext";
 import LanguageSwitcher from "./LanguageSwithcer";
+import { twMerge } from "tailwind-merge";
+import { Button } from "./Button";
+import { useState } from "react";
+import { Navigation } from "./Navigation";
 
 export const Header = ({ lang }: { lang: "en" | "lt" }) => {
   const { t } = useI18n();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex h-[126px] justify-center items-center h-20 w-full pl-[75px] pr-[65px]">
-      <a href={`/${lang}`} className="pr-[50px]">
+    <header className="fixed top-0 left-0 right-0 bg-white flex h-24 lg:h-[126px] justify-between lg:justify-center items-center h-20 w-full px-8 2xl:pl-[75px] 2xl:pr-[65px]">
+      <a
+        href={`/${lang}`}
+        className="mr-6 max-w-[160px] xl:max-w-[260px] w-full"
+      >
         <svg
-          width="261"
-          height="67"
+          width="100%"
+          height="100%"
           viewBox="0 0 261 67"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -121,14 +129,74 @@ export const Header = ({ lang }: { lang: "en" | "lt" }) => {
           />
         </svg>
       </a>
-      <nav className="mr-auto">
-        <ul className="flex gap-4">
-          <li>
-            <a href="/en">{t("navigation.howItWorks")}</a>
-          </li>
-        </ul>
-      </nav>
-      <LanguageSwitcher />
+
+      <div className="hidden lg:block mr-auto">
+        <Navigation lang={lang} />
+      </div>
+
+      <div className="flex gap-8 2xl:gap-[50px] items-center">
+        <LanguageSwitcher />
+        <div className="flex lg:hidden relative w-[32px] h-[32px] items-center justify-center">
+          <button
+            aria-label="open menu"
+            className={twMerge(
+              "absolute opacity-100 transition-opacity duration-300 pointer-events-auto",
+              isOpen && "opacity-0 pointer-events-none"
+            )}
+            onClick={() => setIsOpen(true)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+              width="24px"
+              height="24px"
+            >
+              <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z" />
+              <path
+                xmlns="http://www.w3.org/2000/svg"
+                d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="close menu"
+            className={twMerge(
+              "absolute opacity-0 transition-opacity duration-300 pointer-events-none",
+              isOpen && "opacity-100 pointer-events-auto"
+            )}
+            onClick={() => setIsOpen(false)}
+          >
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+                fill="#0F0F0F"
+              />
+            </svg>
+          </button>
+        </div>
+        <Button
+          href={`/${lang}/login`}
+          size="small"
+          variant="borderless"
+          className="hidden lg:flex"
+        >
+          {t("common.login")}
+        </Button>
+        <Button
+          href={`/${lang}/register`}
+          size="small"
+          variant="primary"
+          className="hidden lg:flex"
+        >
+          {t("common.register")}
+        </Button>
+      </div>
     </header>
   );
 };

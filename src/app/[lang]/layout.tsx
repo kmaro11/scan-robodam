@@ -9,12 +9,10 @@ interface LayoutProps {
 
 export default async function LangLayout({ children, params }: LayoutProps) {
   const { lang } = await Promise.resolve(params);
-  console.log("Current language:", lang);
-
   return (
     <I18nProvider lang={lang}>
       <div className="pt-[126px]">
-        {/* <Header lang={lang} /> */}
+        <Header lang={lang} />
         {children}
       </div>
     </I18nProvider>
