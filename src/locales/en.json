@@ -111,6 +111,8 @@
     },
     "auth": {
         "newUser": "New user?",
-        "signUp": "Sign up"
+        "signUp": "Sign up",
+        "blueText": "Thank you",
+        "normalText": "{blue}, registration successful!"
     }
 }
