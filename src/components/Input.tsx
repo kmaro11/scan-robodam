@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
+import OpenEye from "@/icons/OpenEye.svg";
 
 interface InputProps {
   label: string;
@@ -44,10 +45,9 @@ export const Input: React.FC<InputProps> = ({
           <button
             type="button"
             onClick={() => setShowPassword((prev) => !prev)}
-            className="absolute top-0 right-0 bottom-0 rounded-tr-[5px] rounded-br-[5px] bg-blue w-[56px]"
+            className="absolute top-0 right-0 bottom-0 rounded-tr-[5px] rounded-br-[5px] bg-blue w-[56px] flex items-center justify-center"
           >
-            {/* {showPassword ? <EyeOff size={20} /> : <Eye size={20} />} */}
-            {showPassword ? "icona" : "icona"}
+            {showPassword ? <OpenEye /> : <OpenEye />}
           </button>
         )}
       </div>
