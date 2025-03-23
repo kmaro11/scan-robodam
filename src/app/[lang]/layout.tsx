@@ -1,5 +1,4 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { LandingLayout } from "@/components/LandingLayout";
 import { I18nProvider } from "@/contexts/I18nContext";
 import { ReactNode } from "react";
 
@@ -10,13 +9,10 @@ interface LayoutProps {
 
 export default async function LangLayout({ children, params }: LayoutProps) {
   const { lang } = await Promise.resolve(params);
+
   return (
     <I18nProvider lang={lang}>
-      <div className="pt-[126px]">
-        <Header lang={lang} />
-        {children}
-        <Footer lang={lang} />
-      </div>
+      <LandingLayout children={children} lang={lang} />
     </I18nProvider>
   );
 }
