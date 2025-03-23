@@ -108,5 +108,9 @@
         "price": "Prices",
         "privacyPolicy": "Privacy Policy",
         "followUs": "Follow our news"
+    },
+    "auth": {
+        "newUser": "New user?",
+        "signUp": "Sign up"
     }
 }

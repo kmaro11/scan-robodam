@@ -1,11 +1,12 @@
 import { twMerge } from "tailwind-merge";
 
 export interface ButtonAnchorProps {
-  href: string;
+  href?: string;
   children: React.ReactNode;
   size?: "small" | "normal";
   variant?: "primary" | "secondary" | "borderless";
   className?: string;
+  disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonAnchorProps> = ({
@@ -14,6 +15,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
   size = "normal",
   variant = "primary",
   className,
+  disabled,
 }) => {
   let variantClass = "";
   switch (variant) {
@@ -29,18 +31,38 @@ export const Button: React.FC<ButtonAnchorProps> = ({
   }
 
   return (
-    <a
-      href={href}
-      className={twMerge(
-        "flex items-center rounded-[5px] justify-center rounded-lg text-center capitalize font-bold",
-        size === "normal"
-          ? "px-4 py-2.5 text-2xl md:text-[40px] md:leading-[49px]"
-          : "px-3 py-1 text-xl xl:text-[25px] xl:leading-[30px] h-max",
-        variantClass,
-        className
+    <>
+      {href ? (
+        <a
+          href={href}
+          className={twMerge(
+            "flex items-center rounded-[5px] justify-center rounded-lg text-center capitalize font-bold",
+            size === "normal"
+              ? "px-4 py-2.5 text-2xl md:text-[40px] md:leading-[49px]"
+              : "px-3 py-1 text-xl xl:text-[25px] xl:leading-[30px] h-max",
+            variantClass,
+            className,
+            disabled && "pointer-events-none opacity-50"
+          )}
+        >
+          {children}
+        </a>
+      ) : (
+        <button
+          type="button"
+          className={twMerge(
+            "flex items-center rounded-[5px] justify-center rounded-lg text-center capitalize font-bold",
+            size === "normal"
+              ? "px-4 py-2.5 text-2xl md:text-[40px] md:leading-[49px]"
+              : "px-3 py-1 text-xl xl:text-[25px] xl:leading-[30px] h-max",
+            variantClass,
+            className,
+            disabled && "pointer-events-none opacity-50"
+          )}
+        >
+          {children}
+        </button>
       )}
-    >
-      {children}
-    </a>
+    </>
   );
 };
