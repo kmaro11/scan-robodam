@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { I18nProvider } from "@/contexts/I18nContext";
 import { ReactNode } from "react";
@@ -14,6 +15,7 @@ export default async function LangLayout({ children, params }: LayoutProps) {
       <div className="pt-[126px]">
         <Header lang={lang} />
         {children}
+        <Footer lang={lang} />
       </div>
     </I18nProvider>
   );

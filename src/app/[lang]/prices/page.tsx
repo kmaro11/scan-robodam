@@ -60,7 +60,7 @@ export default function Prices() {
     },
   ];
   return (
-    <section className="py-24 md:pb-[180px] pt-[126px]">
+    <section className="py-24 md:pb-[180px] py-24 md:pt-[126px]">
       <div className="custom-container">
         <div className="max-w-[1500px] w-full mx-auto">
           <div className="lg:pl-11 pb-16 md:pb-[94px] max-w-[945px]">

@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="container mx-auto px-5">
+      <section className="pt-24 md:pt-[163px] container mx-auto px-5">
         <div className="flex flex-col items-center max-w-[1212px] mx-auto w-full">
           <h1 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-10 md:mb-20 text-center text-blue">
             {t("home.heroTitle")}

@@ -71,7 +71,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <div className="custom-container max-w-[1485px]">
+    <div className="pt-24 md:pt-[126px] custom-container max-w-[1485px]">
       <section>
         <h1 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-11 text-blue">
           {t("howItWorks.title")}
