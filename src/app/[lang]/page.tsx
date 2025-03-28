@@ -81,8 +81,11 @@ export default function Home() {
             {t("home.whyTitle")}
           </h2>
           <ul className="grid grid-cols-1 gap-10 md:gap-20 md:grid-cols-2 gap-4">
-            {whyItems.map((item) => (
-              <li className="px-5 bg-gray-100 h-[100px] md:h-[170px] rounded-[30px] flex items-center justify-center">
+            {whyItems.map((item, index) => (
+              <li
+                key={index}
+                className="px-5 bg-gray-100 h-[100px] md:h-[170px] rounded-[30px] flex items-center justify-center"
+              >
                 <p className="w-full md:w-11/12 text-blue font-bold text-xl md:text-[30px] md:leading-[40px] uppercase">
                   {t(`home.${item}`)}
                 </p>
@@ -177,8 +180,11 @@ export default function Home() {
                   <span>{t("home.paytextThird")}</span>
                 </p>
                 <ul className="flex flex-col gap-y-6">
-                  {payItems.map((item) => (
-                    <li className="flex items-center justify-between">
+                  {payItems.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center justify-between"
+                    >
                       <p className="text-xl md:text-[50px] md:leading-[60px] text-blue font-bold underline">
                         {item.docs}
                       </p>
@@ -199,8 +205,11 @@ export default function Home() {
             {t("home.scansTitle")}:
           </h2>
           <ul className="list-disc p-0 pl-5 md:pl-11 m-0 flex flex-col gap-y-2">
-            {scanList.map((item) => (
-              <li className="text-xl md:text-[30px] md:leading-[40px]">
+            {scanList.map((item, index) => (
+              <li
+                key={index}
+                className="text-xl md:text-[30px] md:leading-[40px]"
+              >
                 {t(`home.${item}`)}
               </li>
             ))}

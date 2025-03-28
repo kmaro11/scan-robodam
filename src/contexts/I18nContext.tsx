@@ -19,6 +19,7 @@ export function I18nProvider({
   let translations: TranslationObject = {};
 
   try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
     translations = require(`@/locales/${lang}.json`);
   } catch {
     console.warn(`Missing translations for ${lang}`);
@@ -37,7 +38,7 @@ export function I18nProvider({
     if (!values) return result;
 
     // Handle multiple placeholders dynamically
-    return result.split(/(\{\w+\})/g).map((part, index) => {
+    return result.split(/(\{\w+\})/g).map((part) => {
       const match = part.match(/^\{(\w+)\}$/);
       return match ? values[match[1]] ?? part : part; // Replace if exists, else keep original
     });

@@ -12,7 +12,7 @@ export default async function LangLayout({ children, params }: LayoutProps) {
 
   return (
     <I18nProvider lang={lang}>
-      <LandingLayout children={children} lang={lang} />
+      <LandingLayout lang={lang}>{children}</LandingLayout>
     </I18nProvider>
   );
 }

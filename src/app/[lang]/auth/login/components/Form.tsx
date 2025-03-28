@@ -45,7 +45,9 @@ export const Form = () => {
       // Validate form data using Zod
       schema.parse(formData);
       setErrors({});
-
+      if (status && loading) {
+        // delete later this
+      }
       // Convert formData object to FormData instance
       const formDataToSend = new FormData();
       Object.entries(formData).forEach(([key, value]) => {

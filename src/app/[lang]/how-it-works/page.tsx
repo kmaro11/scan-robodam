@@ -5,11 +5,11 @@ import { useI18n } from "@/contexts/I18nContext";
 export default function HowItWorks() {
   const { t } = useI18n();
 
-  const scanSteps = [
-    "howItWorks.stepOne",
-    "howItWorks.stepTwo",
-    "howItWorks.stepThree",
-  ];
+  // const scanSteps = [
+  //   "howItWorks.stepOne",
+  //   "howItWorks.stepTwo",
+  //   "howItWorks.stepThree",
+  // ];
 
   const functionalities = [
     {
@@ -155,8 +155,11 @@ export default function HowItWorks() {
         </h2>
         <div className="max-w-[1022px] mx-auto w-full">
           <ul className="list-disc p-0 pl-5 md:pl-11 m-0 flex flex-col gap-y-2">
-            {scanList.map((item) => (
-              <li className="text-xl md:text-[30px] md:leading-[40px]">
+            {scanList.map((item, index) => (
+              <li
+                key={index}
+                className="text-xl md:text-[30px] md:leading-[40px]"
+              >
                 {t(`home.${item}`)}
               </li>
             ))}

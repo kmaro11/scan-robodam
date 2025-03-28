@@ -1,6 +1,7 @@
 "use client";
 
 import { useI18n } from "@/contexts/I18nContext";
+import Link from "next/link";
 
 export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
   const { t } = useI18n();
@@ -79,7 +80,7 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
             </a>
           </div>
         </div>
-        <a href="/" className="w-[160px] md:w-[260px] flex flex-shrink-0">
+        <Link href="/" className="w-[160px] md:w-[260px] flex flex-shrink-0">
           <svg
             width="100%"
             height="100%"
@@ -191,7 +192,7 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
               fill="white"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </footer>
   );
