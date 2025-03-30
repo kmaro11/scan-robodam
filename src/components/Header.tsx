@@ -1,13 +1,14 @@
 "use client";
-
 import { useI18n } from "@/contexts/I18nContext";
 import LanguageSwitcher from "./LanguageSwithcer";
 import { twMerge } from "tailwind-merge";
 import { Button } from "./Button";
 import { useState } from "react";
 import { Navigation } from "./Navigation";
+import { Language } from "@/types/language";
+import { LINKS } from "@/constants/Links";
 
-export const Header = ({ lang }: { lang: "en" | "lt" }) => {
+export const Header = ({ lang }: Language) => {
   const { t } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -139,7 +140,7 @@ export const Header = ({ lang }: { lang: "en" | "lt" }) => {
         <Navigation lang={lang} />
 
         <Button
-          href={`/${lang}/register`}
+          href={`/${lang}/${LINKS.AUTH.REGISTER}`}
           size="small"
           variant="primary"
           className="mt-10 max-w-[340px] mx-auto"
@@ -147,7 +148,7 @@ export const Header = ({ lang }: { lang: "en" | "lt" }) => {
           {t("common.register")}
         </Button>
         <Button
-          href={`/${lang}/login`}
+          href={`/${lang}/${LINKS.AUTH.LOGIN}`}
           size="small"
           variant="borderless"
           className="my-5 max-w-[340px] mx-auto"
@@ -203,7 +204,7 @@ export const Header = ({ lang }: { lang: "en" | "lt" }) => {
           </button>
         </div>
         <Button
-          href={`/${lang}/login`}
+          href={`/${lang}/${LINKS.AUTH.LOGIN}`}
           size="small"
           variant="borderless"
           className="hidden lg:flex"
@@ -211,7 +212,7 @@ export const Header = ({ lang }: { lang: "en" | "lt" }) => {
           {t("common.login")}
         </Button>
         <Button
-          href={`/${lang}/register`}
+          href={`/${lang}/${LINKS.AUTH.REGISTER}`}
           size="small"
           variant="primary"
           className="hidden lg:flex"

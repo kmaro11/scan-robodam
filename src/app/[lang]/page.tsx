@@ -1,8 +1,13 @@
 "use client";
 import { Button } from "@/components/Button";
 import { useI18n } from "@/contexts/I18nContext";
+import { LINKS } from "@/constants/Links";
+import { useParams } from "next/navigation";
 
 export default function Home() {
+  const params = useParams();
+  const { lang } = params;
+
   const { t } = useI18n();
   const whyItems = [
     "whyItemOne",
@@ -63,13 +68,16 @@ export default function Home() {
           </p>
           <div className="flex gap-4 items-center max-w-[540px] justify-between w-full">
             <Button
-              href="/en"
+              href={`${lang}/${LINKS.AUTH.LOGIN}`}
               className="max-w-[195px] w-full"
               variant="secondary"
             >
               {t("common.login")}
             </Button>
-            <Button href="/en" className="max-w-[195px] w-full">
+            <Button
+              href={`${lang}/${LINKS.AUTH.REGISTER}`}
+              className="max-w-[195px] w-full"
+            >
               {t("common.register")}
             </Button>
           </div>

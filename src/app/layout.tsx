@@ -1,4 +1,21 @@
 import "@/css/global.css";
+import localFont from "next/font/local";
+
+const customFonts = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Px-Grotesk-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Px-Grotesk-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+});
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={customFonts.className}>{children}</body>
     </html>
   );
 }

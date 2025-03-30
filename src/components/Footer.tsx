@@ -1,5 +1,6 @@
 "use client";
 
+import { LINKS } from "@/constants/Links";
 import { useI18n } from "@/contexts/I18nContext";
 import Link from "next/link";
 
@@ -10,13 +11,13 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
       <div className="custom-container flex flex-col xl:flex-row gap-x-10 justify-between lg:items-end gap-y-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 md:gap-y-14">
           <a
-            href={`/${lang}/how-it-works`}
+            href={`/${lang}/${LINKS.HOWITWORKS}`}
             className="text-white text-xl lg:text-[30px] lg:leading-[40px]"
           >
             {t("navigation.howItWorks")}
           </a>
           <a
-            href={`/${lang}/contacts`}
+            href={`/${lang}/${LINKS.CONTACTS}`}
             className="text-white text-xl lg:text-[30px] lg:leading-[40px]"
           >
             {t("navigation.contacts")}
@@ -33,13 +34,13 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
             </p>
           </div>
           <a
-            href={`/${lang}/prices`}
+            href={`/${lang}/${LINKS.PRICES}`}
             className="text-white text-xl lg:text-[30px] lg:leading-[40px]"
           >
             {t("navigation.price")}
           </a>
           <a
-            href={`/${lang}/`}
+            href={`/${lang}/${LINKS.PRIVACYPOLICY}`}
             className="text-white text-xl lg:text-[30px] lg:leading-[40px]"
           >
             {t("navigation.privacyPolicy")}
@@ -48,7 +49,13 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
             <p className="text-white text-xl lg:text-[30px] lg:leading-[40px]">
               {t("navigation.followUs")}:
             </p>
-            <a href="" className="w-6 h-6 md:w-12 md:h-12">
+            <a
+              href="https://www.linkedin.com/company/robodam"
+              className="w-6 h-6 md:w-12 md:h-12"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="linkedin"
+            >
               <svg
                 width="100%"
                 height="100%"
@@ -63,7 +70,13 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
                 />
               </svg>
             </a>
-            <a href="" className="w-6 h-6 md:w-12 md:h-12">
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+              className="w-6 h-6 md:w-12 md:h-12"
+            >
               <svg
                 width="100%"
                 height="100%"
