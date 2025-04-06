@@ -34,7 +34,10 @@ export const SideTable = ({
         </div>
         <ul>
           {list.map((item) => (
-            <li className="group transition duration-300 flex items-center justify-between pl-[14px] pr-2 py-2 border-b border-gray-200 hover:bg-blue/10 cursor-pointer">
+            <li
+              key={item.id}
+              className="group transition duration-300 flex items-center justify-between pl-[14px] pr-2 py-2 border-b border-gray-200 hover:bg-blue/10 cursor-pointer"
+            >
               <div className="text-lg">
                 {item.name} ({item.invoices})
               </div>

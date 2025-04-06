@@ -35,6 +35,7 @@ export const Table = ({
         list.length > 0 &&
         list.map((item, i) => (
           <div
+            key={i}
             className="grid w-full h-[45px] border-t border-gray-200"
             style={{
               gridTemplateColumns: `repeat(${

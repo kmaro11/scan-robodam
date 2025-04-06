@@ -6,7 +6,7 @@ import Copy from "@/icons/Copy.svg";
 
 export const UploadBar = () => {
   const { t } = useI18n();
-  const [copy, isCopied] = useCopyToClipboard();
+  const [copy] = useCopyToClipboard();
   return (
     <div className="py-5 bg-gray-300 border-t border-gray-200 flex items-center justify-center gap-5">
       <div className="text-lg"> {t("app.dragAndDrop")}</div>
