@@ -100,7 +100,8 @@
     },
     "common": {
         "login": "login",
-        "register": "register"
+        "register": "register",
+        "confirm": "confirm"
     },
     "navigation": {
         "howItWorks": "How it works?",
@@ -113,6 +114,23 @@
         "newUser": "New user?",
         "signUp": "Sign up",
         "blueText": "Thank you",
-        "normalText": "{blue}, registration successful!"
+        "normalText": "{blue}, registration successful!",
+        "registeredUser": "Registered user",
+        "signIn": "Sign in",
+        "email": "Email",
+        "password": "Password",
+        "phone": "Phone",
+        "confirmPassword": "Confirm password",
+        "alreadyHaveAccount": "Already have an account?",
+        "forgotPassword": "Forgot password?",
+        "accountingSoftware": "Accounting software",
+        "emailConfirmation": "Email confirmation",
+        "confirmationText":"A confirmation code was sent to the {email} email address",
+        "code":"Code",
+        "confirmPlaceholder":"Enter confirmation code",
+        "notReceived":"Did not receive it",
+        "resend":"Resend",
+        "backToLogin":"Back to login"
+
     }
 }

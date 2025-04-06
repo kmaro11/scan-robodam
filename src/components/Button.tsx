@@ -7,6 +7,7 @@ export interface ButtonAnchorProps {
   variant?: "primary" | "secondary" | "borderless";
   className?: string;
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 export const Button: React.FC<ButtonAnchorProps> = ({
@@ -16,6 +17,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
   variant = "primary",
   className,
   disabled,
+  type = "button",
 }) => {
   let variantClass = "";
   switch (variant) {
@@ -49,7 +51,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
         </a>
       ) : (
         <button
-          type="button"
+          type={type}
           className={twMerge(
             "flex items-center rounded-[5px] justify-center rounded-lg text-center capitalize font-bold",
             size === "normal"

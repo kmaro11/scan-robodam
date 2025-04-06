@@ -6,7 +6,7 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="py-20 relative h-[100dvh]">
+    <div className="py-20 relative">
       <div className="absolute top-6 right-8">
         <AuthLangSwitch />
       </div>

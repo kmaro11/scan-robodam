@@ -10,9 +10,9 @@ export const LandingLayout = ({
   lang: "en" | "lt";
 }) => {
   const pathName = usePathname();
-  const isAuthHeader = pathName.includes("auth");
+  const simpleLayout = pathName.includes("auth") || pathName.includes("scan");
 
-  if (isAuthHeader) return <main>{children}</main>;
+  if (simpleLayout) return <main>{children}</main>;
 
   return (
     <main className="pt-[126px]">

@@ -6,8 +6,11 @@ export const LINKS = {
   AUTH: {
     LOGIN: "auth/login",
     REGISTER: "auth/register",
-    // REGISTERED: "auth/registered",
-    // EMAILCONFIRMATION: "auth/email-confirmation",
+    REGISTERED: "auth/registered",
+    EMAILCONFIRMATION: "auth/email-confirmation",
     // FORGOTPASSWORD: "auth/forgot-password",
+  },
+  SCAN: {
+    HOME: "scan/dashboard",
   },
 };

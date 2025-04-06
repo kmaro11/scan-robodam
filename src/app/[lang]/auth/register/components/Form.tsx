@@ -4,8 +4,9 @@ import { z, ZodError } from "zod";
 import { Input } from "@/components/Input";
 import { Button } from "@/components/Button";
 import { useI18n } from "@/contexts/I18nContext";
-import { useParams, useRouter } from "next/navigation";
 import { LINKS } from "@/constants/Links";
+import { useParams, useRouter } from "next/navigation";
+import Select from "@/components/Select";
 
 const schema = z.object({
   name: z.string().nonempty("Name is required"),
@@ -15,21 +16,25 @@ const schema = z.object({
 interface FormData {
   email: string;
   password: string;
+  phone: string;
+  software: string;
 }
 
 export const Form = () => {
   const { t } = useI18n();
   const params = useParams();
   const { lang } = params;
-  const router = useRouter();
   const [formData, setFormData] = useState<FormData>({
     password: "",
     email: "",
+    phone: "",
+    software: "",
   });
 
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [status, setStatus] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  const router = useRouter();
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,7 +50,7 @@ export const Form = () => {
     setStatus(null);
     setLoading(true);
 
-    router.push(`/${lang}/${LINKS.SCAN.HOME}`);
+    router.push(`/${lang}/${LINKS.AUTH.EMAILCONFIRMATION}`);
     return console.log("submit");
 
     try {
@@ -85,12 +90,12 @@ export const Form = () => {
     >
       <div className="max-w-[480px] w-full mx-auto">
         <h2 className="text-center text-[40px] leading-[50px] font-bold mb-7 capitalize">
-          {t("common.login")}
+          {t("auth.signUp")}
         </h2>
         <div className="flex flex-col gap-y-11">
           <div>
             <Input
-              label="Your Email"
+              label="auth.email"
               name="email"
               required
               placeholder="Enter your email address"
@@ -102,7 +107,7 @@ export const Form = () => {
 
           <div>
             <Input
-              label="Your password"
+              label="auth.password"
               name="password"
               type="password"
               placeholder="Enter your password"
@@ -111,19 +116,41 @@ export const Form = () => {
               value={formData.password}
               onChange={handleChange}
             />
-            {errors.password && (
-              <p className="text-red-600 text-sm">{errors.password}</p>
-            )}
+          </div>
+
+          <div>
+            <Input
+              label="auth.phone"
+              name="phone"
+              type="tel"
+              required
+              placeholder="+37012312312"
+              error={!!errors.phone}
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label className="block mb-6 text-xl font-bold text-blue">
+              {t("auth.accountingSoftware")}*
+            </label>
+            <Select
+              options={["Option 1", "Option 2", "Option 3"]}
+              selected={formData.software}
+              setSelected={(value) =>
+                setFormData((prev) => ({ ...prev, software: value }))
+              }
+            />
           </div>
         </div>
-        <div className="flex justify-between items-center pt-[60px]">
+        <div className="flex justify-between items-center pt-10">
           <div>
-            <p className="text-xl">{t("auth.newUser")}</p>
+            <p className="text-xl">{t("auth.registeredUser")}?</p>
             <a
-              href={`${lang}/${LINKS.AUTH.REGISTER}`}
+              href={`/${lang}/${LINKS.AUTH.LOGIN}`}
               className="text-blue text-xl font-bold"
             >
-              {t("auth.signUp")}
+              {t("auth.signIn")}
             </a>
           </div>
           <Button
@@ -131,7 +158,7 @@ export const Form = () => {
             size="small"
             className="max-w-[170px] w-full uppercase h-[52px]"
           >
-            {t("common.login")}
+            {t("auth.signUp")}
           </Button>
         </div>
       </div>
