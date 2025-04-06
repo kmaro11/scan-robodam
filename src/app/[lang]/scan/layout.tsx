@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { UploadBar } from "./components/UploadBar";
 export default function ScanLayout({
   children,
 }: {
@@ -8,6 +9,7 @@ export default function ScanLayout({
   return (
     <div className="relative">
       <Header />
+      <UploadBar />
       {children}
     </div>
   );

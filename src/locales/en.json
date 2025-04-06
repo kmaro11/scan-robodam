@@ -131,6 +131,24 @@
         "notReceived":"Did not receive it",
         "resend":"Resend",
         "backToLogin":"Back to login"
-
+    },
+    "app": {
+        "dragAndDrop": "Drag and drop file here or click",
+        "selectDocuments": "Select documents",
+        "sendInvoiceEmail": "You can also send invoices to {email}",
+        "upload": "Upload",
+        "processedInvoices": "Processed invoices",
+        "signContract": "Sign a contract",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": "",
+        "": ""
     }
 }
