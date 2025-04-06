@@ -20,7 +20,7 @@ module.exports = {
           300: '#EEEEEE'
         },
         red: "#FF0000"
-      }
+      },
     },
   },
   plugins: [],

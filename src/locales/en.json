@@ -141,14 +141,17 @@
         "signContract": "Sign a contract",
         "findParty": "Find a party",
         "parties": "Parties",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": "",
-        "": ""
+        "invoiceDate": "Inv. date",
+        "invoiceNumber": "Number",
+        "clientName": "Client",
+        "subtotal": "Subtotal",
+        "vat": "VAT",
+        "vatPercent": "VAT%",
+        "total": "Total",
+        "dueDate": "Due Date",
+        "orderNumber": "Order No.",
+        "allocation": "Alloc.",
+        "vatDetails": "VAT ...",
+        "file": "File"
     }
 }
