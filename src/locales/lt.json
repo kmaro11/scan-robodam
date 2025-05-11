@@ -12,14 +12,11 @@
         "whyItemFour":"Sąskaitos saugomos e. archyve",        
         "whyItemFive":"Vienu metu apdoroja didelį kiekį sąskaitų",        
         "whyItemSix":"Integracija su 30+ apskaitos programų.",
-
         "programsTitle": "integracija su 30+ apskaitos programų.",
-
         "howTitle":"Kaip tai veikia",
         "howItemOne":"Nuskenuokite arba nufotografuokite popierines sąskaitas ir įkelkite jas į „Robodam Scan“. Palaukite, kol sąskaitos bus skaitmenizuotos.",
         "howItemTwo":"Parodykite, kuri sąskaita atitinka kurią buhalterinę sąskaitą. Kitą mėnesį programa automatiškai priskirs buhalterines sąskaitas.",
         "howItemThree":"„Robodam Scan“ paruoš sąskaitas importui į jūsų buhalterinę programą ir pateiks importo failus, kuriuos galėsite įkelti vos keliais paspaudimais (arba automatiškai).",
-        
         "priceTitle": "Kaina 15 ct + PVM už sąsk.",
         "priceSubtitle": "Mokate už tiek, kiek sąskaitų automatizuojate.",
         "priceButton": "Daugiau apie kainodara"
@@ -84,11 +81,11 @@
         "register": "register"
     },
     "navigation": {
-        "howItWorks": "How it works?",
-        "contacts": "Contacts",
-        "price": "Prices",
-        "privacyPolicy": "Privacy Policy",
-        "followUs": "Follow our news"
+        "howItWorks": "Kaip tai veikia?",
+        "contacts": "Kontaktai",
+        "price": "Kainos",
+        "privacyPolicy": "Privatumo politika",
+        "copyright": "Visos teisės saugomos Robodam, UAB"
     },
     "auth": {
         "newUser": "New user?",

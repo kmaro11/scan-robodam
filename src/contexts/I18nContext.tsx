@@ -19,7 +19,7 @@ export function I18nProvider({
   let translations: TranslationObject = {};
 
   try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-var-requires
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     translations = require(`@/locales/${lang}.json`);
   } catch {
     console.warn(`Missing translations for ${lang}`);

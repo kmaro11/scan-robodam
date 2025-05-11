@@ -115,7 +115,7 @@ export default function Home() {
           {t("home.priceSubtitle")}
         </p>
         <Button
-          href={`${lang}/${LINKS.AUTH.REGISTER}`}
+          href={`${lang}/${LINKS.PRICES}`}
           variant="green"
           size="green-normal"
           className="w-full mx-auto"
