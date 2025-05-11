@@ -55,15 +55,7 @@
         "functionalitiesEightRight": "Only processed invoices are charged"
     },
     "contacts": {
-        "title": "Do you have any questions?",
-        "title2": "Want more information?",
-        "contact": "Contact us",
-        "visit":"Visit us",
-        "company":"Company code",
-        "vat":"VAT code",
-        "iban":"IBAN",
-        "email":"email",
-        "phone":"Phone"
+        "title": "Iškilus klausimams susisiekite nurodytais kontaktai"
     },
     "common": {
         "login": "Prisijungti",
