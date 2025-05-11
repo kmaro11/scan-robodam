@@ -1,43 +1,35 @@
-"use client";
+import { NavigationItems } from "./NavigationItems";
+import Mail from "@/icons/Mail.svg";
+import Phone from "@/icons/Phone.svg";
 
-import { useI18n } from "@/contexts/I18nContext";
-import { usePathname } from "next/navigation";
-import { twMerge } from "tailwind-merge";
+export const Navigation = ({ lang }: { lang: "lt" }) => {
+  console.log(lang);
 
-export const Navigation = ({ lang }: { lang: "en" | "lt" }) => {
-  const { t } = useI18n();
-  const pathName = usePathname();
-  const nav = [
-    {
-      name: "navigation.howItWorks",
-      href: "how-it-works",
-    },
-    {
-      name: "navigation.price",
-      href: "prices",
-    },
-    {
-      name: "navigation.contacts",
-      href: "contacts",
-    },
-  ];
   return (
-    <nav className="flex pt-20">
-      <ul className="flex flex-col lg:flex-row gap-y-5 max-w-max w-full">
-        {nav.map((item) => (
-          <li key={item.href}>
-            <a
-              href={`/${lang}/${item.href}`}
-              className={twMerge(
-                "px-4 2xl:px-6 py-3 text-3xl lg:text-xl xl:text-[28px] hover:text-blue transition-colors duration-200",
-                pathName === `/${lang}/${item.href}` && "text-blue"
-              )}
-            >
-              {t(item.name)}
-            </a>
-          </li>
-        ))}
+    <nav className="flex flex-col pt-24 md:pt-0">
+      <ul className="flex flex-col w-full">
+        <NavigationItems lang={lang} />
       </ul>
+      <div className="flex flex-col md:flex-row gap-y-5 mt-20">
+        <a
+          href="mailto:admin@robodam.com"
+          className="text-primary text-[22px] leading-[44px] flex items-center gap-4"
+        >
+          <div className="w-[22px] flex justify-center">
+            <Mail className="max-w-[25px] text-primary" />
+          </div>
+          admin@robodam.com
+        </a>
+        <a
+          href="tel:+37065749748"
+          className="text-primary text-[22px] leading-[44px] flex items-center gap-4"
+        >
+          <div className="w-[22px] flex justify-center">
+            <Phone className="max-w-[18px] text-primary" />
+          </div>
+          +370 657 49 748
+        </a>
+      </div>
     </nav>
   );
 };

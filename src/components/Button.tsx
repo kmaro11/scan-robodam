@@ -4,7 +4,7 @@ export interface ButtonAnchorProps {
   href?: string;
   children: React.ReactNode;
   size?: "small" | "normal" | "green-small" | "green-normal";
-  variant?: "primary" | "secondary" | "borderless" | "green" | "dark-green";
+  variant?: "primary" | "secondary" | "borderless" | "green" | "green-dark";
   className?: string;
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
@@ -31,8 +31,9 @@ export const Button: React.FC<ButtonAnchorProps> = ({
     case "green":
       variantClass = "bg-green text-primary";
       break;
-    case "dark-green":
+    case "green-dark":
       variantClass = "bg-green-100 text-white";
+      break;
     case "borderless":
       variantClass = "px-0";
       break;

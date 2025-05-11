@@ -1,3 +1,3 @@
 export interface Language {
-  lang: "en" | "lt";
+  lang: "lt";
 }

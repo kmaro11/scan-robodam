@@ -7,7 +7,7 @@ export const LandingLayout = ({
   lang,
 }: {
   children: React.ReactNode;
-  lang: "en" | "lt";
+  lang: "lt";
 }) => {
   const pathName = usePathname();
   const simpleLayout = pathName.includes("auth") || pathName.includes("scan");
@@ -15,8 +15,8 @@ export const LandingLayout = ({
   if (simpleLayout) return <main>{children}</main>;
 
   return (
-    <main className="pt-[126px]">
-      <Header lang="en" />
+    <main className=" pt-20 lg:pt-[88px]">
+      <Header lang={lang} />
       {children}
       <Footer lang={lang} />
     </main>

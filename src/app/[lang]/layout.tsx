@@ -4,11 +4,12 @@ import { ReactNode } from "react";
 
 interface LayoutProps {
   children: ReactNode;
-  params: { lang: "en" | "lt" };
+  params: { lang: "lt" };
 }
 
 export default async function LangLayout({ children, params }: LayoutProps) {
   const { lang } = await Promise.resolve(params);
+  console.log(lang);
 
   return (
     <I18nProvider lang={lang}>
@@ -18,5 +19,5 @@ export default async function LangLayout({ children, params }: LayoutProps) {
 }
 
 export function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "lt" }];
+  return [{ lang: "lt" }];
 }

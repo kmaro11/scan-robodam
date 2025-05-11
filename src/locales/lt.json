@@ -77,8 +77,8 @@
         "phone":"Phone"
     },
     "common": {
-        "login": "login",
-        "register": "register"
+        "login": "Prisijungti",
+        "register": "Registruotis"
     },
     "navigation": {
         "howItWorks": "Kaip tai veikia?",

@@ -7,7 +7,7 @@ import Phone from "@/icons/Phone.svg";
 import Mail from "@/icons/Mail.svg";
 import GreenLightLogo from "@/icons/GreenLightLogo.svg";
 
-export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
+export const Footer = ({ lang }: { lang: "lt" }) => {
   const { t } = useI18n();
   return (
     <footer className="bg-green-100 px-5 pb-7 md:pb-12 pt-11">
@@ -62,7 +62,7 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
                 className="text-white text-lg leading-[100%] flex items-center gap-4"
               >
                 <div className="w-[22px] flex justify-center">
-                  <Mail classNa me="max-w-[22px]" />
+                  <Mail className="max-w-[22px] text-white" />
                 </div>
                 admin@robodam.com
               </a>
@@ -71,7 +71,7 @@ export const Footer = ({ lang }: { lang: "en" | "lt" }) => {
                 className="text-white text-lg leading-[100%] flex items-center gap-4"
               >
                 <div className="w-[22px] flex justify-center">
-                  <Phone className="max-w-[16px]" />
+                  <Phone className="max-w-[16px] text-white" />
                 </div>
                 +370 657 49 748
               </a>

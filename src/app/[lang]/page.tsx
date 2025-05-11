@@ -86,7 +86,10 @@ export default function Home() {
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[888px] mx-auto w-full mb-9 lg:mb-11">
           {howItWorksSteps.map((item, index) => (
-            <li className="flex flex-col items-center bg-green-100 rounded-[5px] px-5 py-6 min-h-[337px] h-auto">
+            <li
+              key={index}
+              className="flex flex-col items-center bg-green-100 rounded-[5px] px-5 py-6 min-h-[337px] h-auto"
+            >
               <div className="text-white bg-green rounded-full w-[33px] h-[33px] flex items-center justify-center mb-6">
                 {index + 1}
               </div>
