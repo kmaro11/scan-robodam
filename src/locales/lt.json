@@ -4,7 +4,6 @@
         "heroTitle": "Pavargote nuo monotoniško sąskaitų suvedimo?",
         "heroDescription": "Automatizuokite šį procesą su Robodam Scan. Sutaupykite laiko, išvenkite klaidų ir susitelkite į svarbesnius darbus.",
         "heroButton": "Išmėginti nemokamai",
-
         "whyTitle":"Robodam Scan privalumai",
         "whyItemOne":"Išlaisvina nuo monotoniško darbo",
         "whyItemTwo":"Pašalina žmogiškas klaidas",
@@ -22,20 +21,10 @@
         "priceButton": "Daugiau apie kainodara"
     },
     "prices": {
-        "title": "You pay for what you use",
-        "subtitle": "Robodam Scan is charged per document per month and you pay as you upload documents. The cost per document is calculated based on the number of documents uploaded per month according to this pricing table:",
-        "tableColOne": "Doc. count",
-        "tableColTwo": "Discount on doc. price",
-        "tableColThree": "Document price*",
-        "tableColFour": "Average doc. price",
-        "cents": "cents",
-        "pieces": "pieces",
-        "textOne": "Cost per line for digitizing a detailed document",
-        "textTwo": "Minimum number of charged lines",
-        "forExample":"For example: ",
-        "example": "You uploaded 1300 documents, you will pau: 250 * 0,3 + 250 * 0,285 + 500 * 0,27 + 300 * 0,255 = 358,75€ + VAT. On average, one document will cost 27,5 cents.",
-        "exempt": "Exempt: ",
-        "exemptText": "duplicate documents, non-invoices and unreadable documents. *Prices do not include VAT. We issue an invoice for the services on the last day of the month for all processed documents."
+        "title": "Mokate už tiek, kiek sąskaitų automatizuojate.",
+        "subtitle": "„Robodam Scan“ paslauga apmokestinama pagal dokumentų skaičių per mėnesį – mokate tik tada, kai įkeliate dokumentus. Kaina už vieną dokumentą apskaičiuojama pagal mėnesio metu įkeltų dokumentų kiekį, remiantis šia kainodaros lentele:",
+        "infoTextOne":"{text} pasikartojantys dokumentai, ne sąskaitos ir neįskaitomi dokumentai.",
+        "infoTextTwo":" *Kainos nurodytos be PVM. Sąskaita už paslaugas išrašoma paskutinę mėnesio dieną už visus apdorotus dokumentus."
     },
     "howItWorks": {
         "title": "How does “Robodam scan” work?",
