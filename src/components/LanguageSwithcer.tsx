@@ -70,7 +70,7 @@ export default function LanguageSwitcher() {
             <button
               key={code}
               onClick={() => changeLanguage(code)}
-              className="block w-full px-4 py-2 text-left hover:text-blue text-base border-b border-gray-100 last:border-0"
+              className="block w-full px-4 py-2 text-left hover:text-green-100 text-base border-b border-gray-100 last:border-0"
             >
               {label}
             </button>

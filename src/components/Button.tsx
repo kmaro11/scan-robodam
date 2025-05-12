@@ -23,10 +23,10 @@ export const Button: React.FC<ButtonAnchorProps> = ({
   let sizeClass = "";
   switch (variant) {
     case "primary":
-      variantClass = "bg-blue text-white";
+      variantClass = "bg-green-100 text-white";
       break;
     case "secondary":
-      variantClass = "bg-white border-2 border-blue text-blue";
+      variantClass = "bg-white border-2 border-green text-white";
       break;
     case "green":
       variantClass = "bg-green text-primary";

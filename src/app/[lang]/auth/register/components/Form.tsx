@@ -131,7 +131,7 @@ export const Form = () => {
             />
           </div>
           <div>
-            <label className="block mb-6 text-xl font-bold text-blue">
+            <label className="block mb-6 text-xl font-bold text-green-100">
               {t("auth.accountingSoftware")}*
             </label>
             <Select
@@ -148,7 +148,7 @@ export const Form = () => {
             <p className="text-xl">{t("auth.registeredUser")}?</p>
             <a
               href={`/${lang}/${LINKS.AUTH.LOGIN}`}
-              className="text-blue text-xl font-bold"
+              className="text-green-100 text-xl font-bold"
             >
               {t("auth.signIn")}
             </a>

@@ -81,7 +81,9 @@ export default function Select({
             <li
               key={option}
               className={`px-4 py-2 cursor-pointer ${
-                index === highlightedIndex ? "bg-blue-100" : "hover:bg-gray-100"
+                index === highlightedIndex
+                  ? "bg-green-100-100"
+                  : "hover:bg-gray-100"
               }`}
               onClick={() => {
                 setSelected(option);

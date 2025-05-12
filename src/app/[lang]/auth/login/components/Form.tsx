@@ -6,6 +6,7 @@ import { Button } from "@/components/Button";
 import { useI18n } from "@/contexts/I18nContext";
 import { useParams, useRouter } from "next/navigation";
 import { LINKS } from "@/constants/Links";
+import Link from "next/link";
 
 const schema = z.object({
   name: z.string().nonempty("Name is required"),
@@ -119,12 +120,12 @@ export const Form = () => {
         <div className="flex justify-between items-center pt-[60px]">
           <div>
             <p className="text-xl">{t("auth.newUser")}</p>
-            <a
-              href={`${lang}/${LINKS.AUTH.REGISTER}`}
-              className="text-blue text-xl font-bold"
+            <Link
+              href={`/${lang}/${LINKS.AUTH.REGISTER}`}
+              className="text-green-100 text-xl font-bold"
             >
               {t("auth.signUp")}
-            </a>
+            </Link>
           </div>
           <Button
             type="submit"

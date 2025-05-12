@@ -30,7 +30,7 @@ export const Input: React.FC<InputProps> = ({
 
   return (
     <div className="relative w-full flex flex-col">
-      <label htmlFor={name} className="mb-6 text-xl font-bold text-blue">
+      <label htmlFor={name} className="mb-6 text-xl font-bold text-green-100">
         {t(label)}
         {required && <>*</>}
       </label>
@@ -54,7 +54,7 @@ export const Input: React.FC<InputProps> = ({
           <button
             type="button"
             onClick={() => setShowPassword((prev) => !prev)}
-            className="absolute top-0 right-0 bottom-0 rounded-tr-[5px] rounded-br-[5px] bg-blue w-[56px] flex items-center justify-center"
+            className="absolute top-0 right-0 bottom-0 rounded-tr-[5px] rounded-br-[5px] bg-green-100 w-[56px] flex items-center justify-center"
           >
             {showPassword ? <OpenEye /> : <CloseEye />}
           </button>

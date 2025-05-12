@@ -111,13 +111,15 @@ export const TableList = () => {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue text-lg font-bold"
+      className="text-green-100 text-lg font-bold"
     >
       {item.file}
     </a>
   );
   const invoiceNumberSlot = (item: any) => (
-    <span className="text-blue text-lg font-bold">{item.invoiceNumber}</span>
+    <span className="text-green-100 text-lg font-bold">
+      {item.invoiceNumber}
+    </span>
   );
   return (
     <div className="flex">

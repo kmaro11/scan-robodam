@@ -44,7 +44,7 @@ export default function AuthLangSwitch() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-10 h-10 bg-white flex items-center justify-center gap-1 text-xl text-blue"
+        className="w-10 h-10 bg-white flex items-center justify-center gap-1 text-xl text-green-100"
       >
         {getLanguage(pathname)}
         <span
@@ -53,7 +53,7 @@ export default function AuthLangSwitch() {
             isOpen ? "rotate-180" : ""
           )}
         >
-          <ArrowDown className="text-blue" />
+          <ArrowDown className="text-green-100" />
         </span>
       </button>
 
@@ -63,7 +63,7 @@ export default function AuthLangSwitch() {
             <button
               key={code}
               onClick={() => changeLanguage(code)}
-              className="block w-full px-4 py-2 text-left text-blue text-base border-b border-gray-100 last:border-0"
+              className="block w-full px-4 py-2 text-left text-green-100 text-base border-b border-gray-100 last:border-0"
             >
               {label}
             </button>

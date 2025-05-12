@@ -85,7 +85,7 @@ export const Form = () => {
         <h2 className="text-center text-[40px] leading-[50px] font-bold mb-7 capitalize">
           {t("auth.emailConfirmation")}
         </h2>
-        <p className="text-xl text-blue mb-4">
+        <p className="text-xl text-green-100 mb-4">
           {t("auth.confirmationText", {
             email: email,
           })}

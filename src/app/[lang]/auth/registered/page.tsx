@@ -12,7 +12,7 @@ export default function Registered() {
     <div className="">
       <h1 className="text-[60px] leading-[70px] font-bold text-center mt-24">
         {t("auth.normalText", {
-          blue: <span className="text-blue">{t("auth.blueText")}</span>,
+          blue: <span className="text-green-100">{t("auth.blueText")}</span>,
         })}
       </h1>
       <Button
