@@ -15,8 +15,8 @@ export const Navigation = ({ lang }: { lang: "lt" }) => {
           href="mailto:admin@robodam.com"
           className="text-primary text-[22px] leading-[44px] flex items-center gap-4"
         >
-          <div className="w-[22px] flex justify-center">
-            <Mail className="max-w-[25px] text-primary" />
+          <div className="w-[25px] flex justify-center">
+            <Mail className="w-[25px] text-primary" />
           </div>
           admin@robodam.com
         </a>
@@ -24,8 +24,8 @@ export const Navigation = ({ lang }: { lang: "lt" }) => {
           href="tel:+37065749748"
           className="text-primary text-[22px] leading-[44px] flex items-center gap-4"
         >
-          <div className="w-[22px] flex justify-center">
-            <Phone className="max-w-[18px] text-primary" />
+          <div className="w-[25px] flex justify-center">
+            <Phone className="w-[18px] text-primary" />
           </div>
           +370 657 49 748
         </a>

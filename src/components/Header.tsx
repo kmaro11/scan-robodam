@@ -20,7 +20,7 @@ export const Header = ({ lang }: Language) => {
       <div className="flex items-center max-w-[1256px] mx-auto w-full">
         <a
           href={`/${lang}`}
-          className="z-50 mr-6 max-w-[160px] xl:max-w-[261px] w-full"
+          className="z-50 mr-auto md:mr-6 max-w-[160px] xl:max-w-[261px] w-full"
         >
           <GreenLogo className="max-w-[131px] lg:max-w-[160px] w-full" />
         </a>

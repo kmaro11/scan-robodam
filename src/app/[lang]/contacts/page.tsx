@@ -17,7 +17,7 @@ export default function Contacts() {
           className="text-primary text-[22px] leading-[44px] flex items-center gap-4 mb-5 lg:mb-0"
         >
           <div className="w-[24px] flex justify-center">
-            <Mail className="max-w-[24px] text-primary" />
+            <Mail className="w-[24px] text-primary" />
           </div>
           admin@robodam.com
         </a>
@@ -26,7 +26,7 @@ export default function Contacts() {
           className="text-primary text-[22px] leading-[44px] flex items-center gap-4"
         >
           <div className="w-[22px] flex justify-center">
-            <Phone className="max-w-[18px] text-primary" />
+            <Phone className="w-[18px] text-primary" />
           </div>
           +370 657 49 748
         </a>

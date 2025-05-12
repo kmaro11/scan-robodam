@@ -166,7 +166,6 @@ export default function HowItWorks() {
               <h2 className="text-[30px] leading-[40px] mb-7 lg:mb-5 font-bold text-primary text-center ">
                 {t(item.title)}
               </h2>
-              privacy-policy
               <ul>
                 {item.texts.map((text, index) => (
                   <li

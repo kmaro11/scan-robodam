@@ -62,7 +62,7 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
                 className="text-white text-lg leading-[100%] flex items-center gap-4"
               >
                 <div className="w-[22px] flex justify-center">
-                  <Mail className="max-w-[22px] text-white" />
+                  <Mail className="w-[22px] text-white" />
                 </div>
                 admin@robodam.com
               </a>
@@ -71,7 +71,7 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
                 className="text-white text-lg leading-[100%] flex items-center gap-4"
               >
                 <div className="w-[22px] flex justify-center">
-                  <Phone className="max-w-[16px] text-white" />
+                  <Phone className="w-[16px] text-white" />
                 </div>
                 +370 657 49 748
               </a>
