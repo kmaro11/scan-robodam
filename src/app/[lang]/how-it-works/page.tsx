@@ -1,135 +1,128 @@
 "use client";
 
+import { Button } from "@/components/Button";
+import { LINKS } from "@/constants/Links";
 import { useI18n } from "@/contexts/I18nContext";
+import { useParams } from "next/navigation";
 
 export default function HowItWorks() {
+  const params = useParams();
+  const { lang } = params;
   const { t } = useI18n();
 
-  // const scanSteps = [
-  //   "howItWorks.stepOne",
-  //   "howItWorks.stepTwo",
-  //   "howItWorks.stepThree",
+  const scanSteps = [
+    "howItWorks.step1",
+    "howItWorks.step2",
+    "howItWorks.step3",
+  ];
+
+  // const functionalities = [
+  //   {
+  //     left: "howItWorks.functionalitiesOneLeft",
+  //     right: "howItWorks.functionalitiesOneRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesTwoLeft",
+  //     right: "howItWorks.functionalitiesTwoRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesThreeLeft",
+  //     right: "howItWorks.functionalitiesThreeRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesFourLeft",
+  //     right: "howItWorks.functionalitiesFourRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesFiveLeft",
+  //     right: "howItWorks.functionalitiesFiveRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesSixLeft",
+  //     right: "howItWorks.functionalitiesSixRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesSevenLeft",
+  //     right: "howItWorks.functionalitiesSevenRight",
+  //   },
+  //   {
+  //     left: "howItWorks.functionalitiesEightLeft",
+  //     right: "howItWorks.functionalitiesEightRight",
+  //   },
   // ];
 
-  const functionalities = [
-    {
-      left: "howItWorks.functionalitiesOneLeft",
-      right: "howItWorks.functionalitiesOneRight",
-    },
-    {
-      left: "howItWorks.functionalitiesTwoLeft",
-      right: "howItWorks.functionalitiesTwoRight",
-    },
-    {
-      left: "howItWorks.functionalitiesThreeLeft",
-      right: "howItWorks.functionalitiesThreeRight",
-    },
-    {
-      left: "howItWorks.functionalitiesFourLeft",
-      right: "howItWorks.functionalitiesFourRight",
-    },
-    {
-      left: "howItWorks.functionalitiesFiveLeft",
-      right: "howItWorks.functionalitiesFiveRight",
-    },
-    {
-      left: "howItWorks.functionalitiesSixLeft",
-      right: "howItWorks.functionalitiesSixRight",
-    },
-    {
-      left: "howItWorks.functionalitiesSevenLeft",
-      right: "howItWorks.functionalitiesSevenRight",
-    },
-    {
-      left: "howItWorks.functionalitiesEightLeft",
-      right: "howItWorks.functionalitiesEightRight",
-    },
-  ];
-
-  const scanList = [
-    "scanItemOne",
-    "scanItemTwo",
-    "scanItemThree",
-    "scanItemFour",
-    "scanItemFive",
-    "scanItemSix",
-    "scanItemSeven",
-    "scanItemEight",
-    "scanItemNine",
-    "scanItemTen",
-    "scanItemEleven",
-    "scanItemTwelve",
-    "scanItemThirteen",
-    "scanItemFourteen",
-    "scanItemFifteen",
-    "scanItemSixteen",
-    "scanItemSeventeen",
-    "scanItemEighteen",
-    "scanItemNineteen",
-    "scanItemTwenty",
-    "scanItemTwentyOne",
-  ];
+  // const scanList = [
+  //   "scanItemOne",
+  //   "scanItemTwo",
+  //   "scanItemThree",
+  //   "scanItemFour",
+  //   "scanItemFive",
+  //   "scanItemSix",
+  //   "scanItemSeven",
+  //   "scanItemEight",
+  //   "scanItemNine",
+  //   "scanItemTen",
+  //   "scanItemEleven",
+  //   "scanItemTwelve",
+  //   "scanItemThirteen",
+  //   "scanItemFourteen",
+  //   "scanItemFifteen",
+  //   "scanItemSixteen",
+  //   "scanItemSeventeen",
+  //   "scanItemEighteen",
+  //   "scanItemNineteen",
+  //   "scanItemTwenty",
+  //   "scanItemTwentyOne",
+  // ];
 
   return (
-    <div className="pt-24 md:pt-[126px] custom-container max-w-[1485px]">
-      <section>
-        <h1 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-11 text-blue">
+    <div className="max-w-[1256px] mx-auto px-5">
+      <section className="pt-[70px] lg:pt-[100px]">
+        <h1 className="text-[30px] md:text-[40px] font-bold leading-[130%] lg:leading-[150%] text-center text-primary mb-5 lg:mb-7">
           {t("howItWorks.title")}
         </h1>
 
-        <p className="text-xl md:text-[30px] md:leading-[40px] mb-8">
-          {t("howItWorks.textOne", {
-            scan: <span className="text-blue">“Robodam Scan”</span>,
-          })}
+        <p className="text-[15px] md:text-[20px] leading-[150%] text-center mb-5">
+          {t("howItWorks.subtextOne")}
         </p>
 
-        <p className="text-xl md:text-[30px] md:leading-[40px] mb-10 md:mb-20">
-          {t("howItWorks.textTwo", {
-            scan: <span className="text-blue">“Robodam Scan”</span>,
-          })}
+        <p className="text-[15px] md:text-[20px] leading-[150%] text-center">
+          {t("howItWorks.subtextTwo")}
         </p>
-
-        <p className="text-xl md:text-[30px] md:leading-[40px] text-blue">
-          {t("howItWorks.subtitle")}
-        </p>
-
-        <div className="relative -z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-10 lg:mt-[122px]">
-          <div className="flex items-start space-x-5 lg:col-span-5">
-            <span className="text-6xl xl:text-[120px] xl:leading-[144px] font-bold text-blue transform lg:-translate-y-10 xl:-translate-y-[72px]">
-              1
-            </span>
-            <p className="text-xl xl:text-[30px] xl:leading-[40px]">
-              {t("howItWorks.step1", {
-                scan: <span className="text-blue">“Robodam Scan”</span>,
-              })}
-            </p>
-          </div>
-
-          <div className="flex items-start space-x-4 lg:col-span-5 lg:col-end-13">
-            <span className="text-6xl xl:text-[120px] xl:leading-[144px] font-bold text-blue transform lg:-translate-y-10 xl:-translate-y-[72px]">
-              2
-            </span>
-            <p className="text-xl xl:text-[30px] xl:leading-[40px]">
-              {t("howItWorks.step2", {
-                scan: <span className="text-blue">“Robodam Scan”</span>,
-              })}
-            </p>
-          </div>
-
-          <div className="flex items-start space-x-4 lg:col-start-4 lg:col-span-5">
-            <span className="text-6xl xl:text-[120px] xl:leading-[144px] font-bold text-blue transform lg:-translate-y-10 xl:-translate-y-[72px]">
-              3
-            </span>
-            <p className="text-xl xl:text-[30px] xl:leading-[40px]">
-              The accountant then imports the account data into his accounting
-              program using the standard functionality of the accounting
-              program.
-            </p>
-          </div>
-        </div>
       </section>
 
-      <section className="pt-10 md:pt-20">
+      <section className="pt-[160px] lg:pt-[140px] px-5">
+        <h2 className="text-[30px] md:text-[40px] font-bold leading-[130%] text-center text-primary mb-8 lg:mb-[60px]">
+          {t("howItWorks.stepTitle")}
+        </h2>
+
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 max-w-[888px] mx-auto w-full mb-8 lg:mb-14 px-5 md:px-0">
+          {scanSteps.map((item, index) => (
+            <li
+              key={index}
+              className="flex flex-col items-center bg-green-100 rounded-[5px] px-5 py-6 min-h-[337px] h-auto"
+            >
+              <div className="text-white bg-green rounded-full w-[33px] h-[33px] flex items-center justify-center mb-6">
+                {index + 1}
+              </div>
+              <p className="text-white text-center text-xl leading-[150%]">
+                {t(item)}
+              </p>
+            </li>
+          ))}
+        </ul>
+
+        <Button
+          href={`${lang}/${LINKS.AUTH.REGISTER}`}
+          variant="green"
+          size="green-normal"
+          className="w-full mx-auto"
+        >
+          {t("home.heroButton")}
+        </Button>
+      </section>
+
+      {/* <section className="pt-10 md:pt-20">
         <h2 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-10 md:mb-20 text-blue">
           {t("howItWorks.functionalities")}
         </h2>
@@ -146,6 +139,7 @@ export default function HowItWorks() {
           ))}
         </ul>
       </section>
+
       <section className="mt-10 md:mt-20 pb-[196px] md:pb-[243px]">
         <h2 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-10 md:mb-20 text-blue">
           {t("howItWorks.whatScan")}
@@ -165,7 +159,7 @@ export default function HowItWorks() {
             ))}
           </ul>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

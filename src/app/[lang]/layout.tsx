@@ -9,7 +9,6 @@ interface LayoutProps {
 
 export default async function LangLayout({ children, params }: LayoutProps) {
   const { lang } = await Promise.resolve(params);
-  console.log(lang);
 
   return (
     <I18nProvider lang={lang}>

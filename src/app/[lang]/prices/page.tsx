@@ -2,8 +2,11 @@
 import { Button } from "@/components/Button";
 import { LINKS } from "@/constants/Links";
 import { useI18n } from "@/contexts/I18nContext";
+import { useParams } from "next/navigation";
 
-export default function Prices({ lang }: { lang: "lt" }) {
+export default function Prices() {
+  const params = useParams();
+  const { lang } = params;
   const { t } = useI18n();
   return (
     <section className="py-[70px] lg:pt-[105px] lg:pb-[147px] max-w-[1256px] mx-auto px-5">

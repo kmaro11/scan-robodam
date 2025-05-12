@@ -27,16 +27,15 @@
         "infoTextTwo":" *Kainos nurodytos be PVM. Sąskaita už paslaugas išrašoma paskutinę mėnesio dieną už visus apdorotus dokumentus."
     },
     "howItWorks": {
-        "title": "How does “Robodam scan” work?",
-        "functionalities": "Functionalities",
-        "whatScan": "What does “Robodam Scan” scan?",
+        "title": "Kaip veikia Robodam Scan",
+        "subtextOne": "„Robodam Scan“ yra paslauga, skirta pirkimo ir pardavimo sąskaitų faktūrų skaitmeninimui ir importavimui į buhalterinę sistemą.",
+        "subtextTwo": "„Robodam Scan“ skaitmeninimas sujungia apskaitą greičiau, tiksliau ir pigiau nei žmogus galėtų tai padaryti rankiniu būdu. Sistema supranta sąskaitas bet kokiu formatu ir bet kuria kalba, nereikalauja jokio papildomo paruošimo, konfigūracijos ar jūsų įsikišimo.",
         
-        "textOne": "{scan} is a service for digitizing and importing purchase and sales invoices into the accounting system.",
-        "textTwo": "The digitization of {scan} brings together the accounts faster, better and cheaper than what a person can do by hand. The system understands invoices in any format and in any language and does not require any additional preparation, configuration or intervention from you.",
-        "subtitle": "Using “Robodam Scan” an accountant uploads invoices to his accounting system in 3 steps:",
-        "step1": "The accountant receives a personal connection to the {scan} system, through which he uploads purchase/sale invoices.",
-        "step2": "The {scan} system scans them and prepares them for import into the accounting system. The accountant connects to {scan} and takes account data in the appropriate format for his accounting program.",
-        "step3": "The accountant then imports the account data into his accounting program using the standard functionality of the accounting program.",
+        "stepTitle": "3 paprastų žingsnių procesas",
+        "step1": "Gaunate asmeninę priegą prie 'Robodam Scan' įrankio, kur sukeliate skanuotus ar fotografuotus failus.",
+        "step2": "'Robodam Scan' įrankis nuskaito informaciją iš jūsų įkeltų skanuotų dokumentų ar nuotraukų ir paruošia šią informaciją jums patogiu formatu.",
+        "step3": "Nuskaitytą inforamacija sukeliama į jūsų naudojamą buhalterinę programą ar kitas sistemas.",
+        
         "functionalitiesOneLeft": "50x faster reconciliation of accounts",
         "functionalitiesOneRight": "Processes large amounts of invoices at once",
         "functionalitiesTwoLeft": "Eliminates human, careless errors",
