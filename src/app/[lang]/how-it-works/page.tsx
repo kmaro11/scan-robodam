@@ -16,64 +16,80 @@ export default function HowItWorks() {
     "howItWorks.step3",
   ];
 
-  // const functionalities = [
-  //   {
-  //     left: "howItWorks.functionalitiesOneLeft",
-  //     right: "howItWorks.functionalitiesOneRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesTwoLeft",
-  //     right: "howItWorks.functionalitiesTwoRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesThreeLeft",
-  //     right: "howItWorks.functionalitiesThreeRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesFourLeft",
-  //     right: "howItWorks.functionalitiesFourRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesFiveLeft",
-  //     right: "howItWorks.functionalitiesFiveRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesSixLeft",
-  //     right: "howItWorks.functionalitiesSixRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesSevenLeft",
-  //     right: "howItWorks.functionalitiesSevenRight",
-  //   },
-  //   {
-  //     left: "howItWorks.functionalitiesEightLeft",
-  //     right: "howItWorks.functionalitiesEightRight",
-  //   },
-  // ];
+  const functionalities = [
+    {
+      left: "howItWorks.functionalitiesOneLeft",
+      right: "howItWorks.functionalitiesOneRight",
+    },
+    {
+      left: "howItWorks.functionalitiesTwoLeft",
+      right: "howItWorks.functionalitiesTwoRight",
+    },
+    {
+      left: "howItWorks.functionalitiesThreeLeft",
+      right: "howItWorks.functionalitiesThreeRight",
+    },
+    {
+      left: "howItWorks.functionalitiesFourLeft",
+      right: "howItWorks.functionalitiesFourRight",
+    },
+    {
+      left: "howItWorks.functionalitiesFiveLeft",
+      right: "howItWorks.functionalitiesFiveRight",
+    },
+    {
+      left: "howItWorks.functionalitiesSixLeft",
+      right: "howItWorks.functionalitiesSixRight",
+    },
+    {
+      left: "howItWorks.functionalitiesSevenLeft",
+      right: "howItWorks.functionalitiesSevenRight",
+    },
+    {
+      left: "howItWorks.functionalitiesEightLeft",
+      right: "howItWorks.functionalitiesEightRight",
+    },
+  ];
 
-  // const scanList = [
-  //   "scanItemOne",
-  //   "scanItemTwo",
-  //   "scanItemThree",
-  //   "scanItemFour",
-  //   "scanItemFive",
-  //   "scanItemSix",
-  //   "scanItemSeven",
-  //   "scanItemEight",
-  //   "scanItemNine",
-  //   "scanItemTen",
-  //   "scanItemEleven",
-  //   "scanItemTwelve",
-  //   "scanItemThirteen",
-  //   "scanItemFourteen",
-  //   "scanItemFifteen",
-  //   "scanItemSixteen",
-  //   "scanItemSeventeen",
-  //   "scanItemEighteen",
-  //   "scanItemNineteen",
-  //   "scanItemTwenty",
-  //   "scanItemTwentyOne",
-  // ];
+  const scanList = [
+    {
+      title: "howItWorks.scanItemOne",
+      texts: [
+        "howItWorks.scanItemOneText",
+        "howItWorks.scanItemOneText2",
+        "howItWorks.scanItemOneText3",
+        "howItWorks.scanItemOneText4",
+        "howItWorks.scanItemOneText5",
+        "howItWorks.scanItemOneText6",
+        "howItWorks.scanItemOneText7",
+        "howItWorks.scanItemOneText8",
+        "howItWorks.scanItemOneText9",
+        "howItWorks.scanItemOneText10",
+      ],
+    },
+    {
+      title: "howItWorks.scanItemTwo",
+      texts: [
+        "howItWorks.scanItemTwoText",
+        "howItWorks.scanItemTwoText2",
+        "howItWorks.scanItemTwoText3",
+        "howItWorks.scanItemTwoText4",
+        "howItWorks.scanItemTwoText5",
+      ],
+    },
+    {
+      title: "howItWorks.scanItemThree",
+      texts: ["howItWorks.scanItemThreeText"],
+    },
+    {
+      title: "howItWorks.scanItemFour",
+      texts: [
+        "howItWorks.scanItemFourText",
+        "howItWorks.scanItemFourText2",
+        "howItWorks.scanItemFourText3",
+      ],
+    },
+  ];
 
   return (
     <div className="max-w-[1256px] mx-auto px-5">
@@ -122,17 +138,20 @@ export default function HowItWorks() {
         </Button>
       </section>
 
-      {/* <section className="pt-10 md:pt-20">
-        <h2 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-10 md:mb-20 text-blue">
-          {t("howItWorks.functionalities")}
+      <section className="pt-[84px] md:pt-[142px]">
+        <h2 className="text-[30px] md:text-[40px] font-bold leading-[130%] text-center text-primary mb-8 lg:mb-10">
+          {t("howItWorks.functionalitiesTitle")}
         </h2>
-        <ul className="bg-blue rounded-[10px] p-3 md:pt-10 md:pr-8 md:pl-9 md:pb-10">
+        <ul className="bg-green-100 rounded-lg pb-[75px] pt-16 px-8 lg:px-12 lg:py-10 ">
           {functionalities.map((item, index) => (
-            <li key={index} className="group grid grid-cols-2 font-bold ">
-              <div className="group-last:border-b-0 flex-grow flex-shrink-0 group-last:pb-0 group-first:pt-0 text-sm font-bold md:text-[30px] md:leading-[40px] text-white py-2 md:pb-4 md:pt-3 border-b border-white border-r ">
+            <li
+              key={index}
+              className="group grid grid-cols-1 md:grid-cols-2 font-bold "
+            >
+              <div className="group-last:md:border-b-0 flex-grow flex-shrink-0 group-last:md:pb-0 group-first:pt-0 text-[15px] leading-[30px] md:text-xl text-white py-3 md:py-2.5 border-b border-green md:border-r ">
                 {t(item.left)}
               </div>
-              <div className="group-last:border-b-0 flex-grow flex-shrink-0 group-last:pb-0 group-first:pt-0 text-sm font-bold md:text-[30px] md:leading-[40px] text-white py-2 md:pb-4 md:pt-3 border-b border-white pl-1.5 md:pl-2.5">
+              <div className="group-last:border-b-0 flex-grow flex-shrink-0 group-last:pb-0 group-first:pt-0 text-[15px] leading-[30px] md:text-xl text-white py-3 md:py-2.5 border-b border-green md:pl-10">
                 {t(item.right)}
               </div>
             </li>
@@ -140,26 +159,37 @@ export default function HowItWorks() {
         </ul>
       </section>
 
-      <section className="mt-10 md:mt-20 pb-[196px] md:pb-[243px]">
-        <h2 className="text-[40px] md:text-[70px] leading-[50px] md:leading-[80px] font-bold mb-10 md:mb-20 text-blue">
-          {t("howItWorks.whatScan")}
-        </h2>
-        <h2 className="text-blue mb-10 md:mb-20 text-xl md:text-[30px] md:leading-[40px]">
-          {t("home.scansTitle")}:
-        </h2>
-        <div className="max-w-[1022px] mx-auto w-full">
-          <ul className="list-disc p-0 pl-5 md:pl-11 m-0 flex flex-col gap-y-2">
-            {scanList.map((item, index) => (
-              <li
-                key={index}
-                className="text-xl md:text-[30px] md:leading-[40px]"
-              >
-                {t(`home.${item}`)}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section> */}
+      <section className="pt-[113px] pb-[68px] lg:pt-[177px] lg:pb-[146px]">
+        <ul className="max-w-[656px] mx-auto w-full">
+          {scanList.map((item, index) => (
+            <li key={index} className="mb-[113px] lg:mb-[103px] last:mb-0">
+              <h2 className="text-[30px] leading-[40px] mb-7 lg:mb-5 font-bold text-primary text-center ">
+                {t(item.title)}
+              </h2>
+              privacy-policy
+              <ul>
+                {item.texts.map((text, index) => (
+                  <li
+                    key={index}
+                    className="text-center text-primary text-[15px] leading-[200%]"
+                  >
+                    {t(text)}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+
+        <Button
+          href={`${lang}/${LINKS.AUTH.REGISTER}`}
+          variant="green"
+          size="green-normal"
+          className="w-full mx-auto mt-16 lg:mt-[90px]"
+        >
+          {t("home.heroButton")}
+        </Button>
+      </section>
     </div>
   );
 }

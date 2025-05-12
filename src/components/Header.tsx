@@ -14,6 +14,7 @@ import Close from "@/icons/Close.svg";
 export const Header = ({ lang }: Language) => {
   const { t } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
+  // return "";
   return (
     <header className="fixed flex items-center top-0 left-0 right-0 bg-white h-20 lg:h-[88px] pt-7 lg:pt-0 px-5 w-full">
       <div className="flex items-center max-w-[1256px] mx-auto w-full">

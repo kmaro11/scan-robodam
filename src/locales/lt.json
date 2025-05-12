@@ -24,34 +24,56 @@
         "title": "Mokate už tiek, kiek sąskaitų automatizuojate.",
         "subtitle": "„Robodam Scan“ paslauga apmokestinama pagal dokumentų skaičių per mėnesį – mokate tik tada, kai įkeliate dokumentus. Kaina už vieną dokumentą apskaičiuojama pagal mėnesio metu įkeltų dokumentų kiekį, remiantis šia kainodaros lentele:",
         "infoTextOne":"{text} pasikartojantys dokumentai, ne sąskaitos ir neįskaitomi dokumentai.",
-        "infoTextTwo":" *Kainos nurodytos be PVM. Sąskaita už paslaugas išrašoma paskutinę mėnesio dieną už visus apdorotus dokumentus."
+        "infoTextTwo":"*Kainos nurodytos be PVM. Sąskaita už paslaugas išrašoma paskutinę mėnesio dieną už visus apdorotus dokumentus."
     },
     "howItWorks": {
         "title": "Kaip veikia Robodam Scan",
         "subtextOne": "„Robodam Scan“ yra paslauga, skirta pirkimo ir pardavimo sąskaitų faktūrų skaitmeninimui ir importavimui į buhalterinę sistemą.",
         "subtextTwo": "„Robodam Scan“ skaitmeninimas sujungia apskaitą greičiau, tiksliau ir pigiau nei žmogus galėtų tai padaryti rankiniu būdu. Sistema supranta sąskaitas bet kokiu formatu ir bet kuria kalba, nereikalauja jokio papildomo paruošimo, konfigūracijos ar jūsų įsikišimo.",
-        
         "stepTitle": "3 paprastų žingsnių procesas",
         "step1": "Gaunate asmeninę priegą prie 'Robodam Scan' įrankio, kur sukeliate skanuotus ar fotografuotus failus.",
         "step2": "'Robodam Scan' įrankis nuskaito informaciją iš jūsų įkeltų skanuotų dokumentų ar nuotraukų ir paruošia šią informaciją jums patogiu formatu.",
         "step3": "Nuskaitytą inforamacija sukeliama į jūsų naudojamą buhalterinę programą ar kitas sistemas.",
-        
-        "functionalitiesOneLeft": "50x faster reconciliation of accounts",
-        "functionalitiesOneRight": "Processes large amounts of invoices at once",
-        "functionalitiesTwoLeft": "Eliminates human, careless errors",
-        "functionalitiesTwoRight": "Company details are checked at the Register Center",
-        "functionalitiesThreeLeft": "5x cheaper than manual guidance",
-        "functionalitiesThreeRight": "Reads information from invoices in various formats",
-        "functionalitiesFourLeft": "Sorts accounts by company automatically",
-        "functionalitiesFourRight": "Integration with accounting programs",
-        "functionalitiesFiveLeft": "Reads bills in foreign languages ​​as well",
-        "functionalitiesFiveRight": "Secure eArchive",
-        "functionalitiesSixLeft": "The system can be accessed from anywhere",
-        "functionalitiesSixRight": "You can send invoices by e-mail",
-        "functionalitiesSevenLeft": "You can transfer the eArchive to GDrive",
-        "functionalitiesSevenRight": "You can import invoices from GDrive",
-        "functionalitiesEightLeft": "You can have as many connections as you need",
-        "functionalitiesEightRight": "Only processed invoices are charged"
+        "functionalitiesTitle": "Funkcionalumai",
+        "functionalitiesOneLeft": "Sąskaitų suderinimas 50 kartų greičiau",
+        "functionalitiesOneRight": "Vienu metu apdoroja didelį kiekį sąskaitų",
+        "functionalitiesTwoLeft": "Pašalina žmogiškas, neatidumo klaidas",
+        "functionalitiesTwoRight": "Įmonės duomenys tikrinami Registrų centre",
+        "functionalitiesThreeLeft": "5 kartus pigiau nei rankinis vedimas",
+        "functionalitiesThreeRight": "Nuskaito informaciją iš sąskaitų įvairiais formatais",
+        "functionalitiesFourLeft": "Sąskaitas automatiškai sugrupuoja pagal įmones",
+        "functionalitiesFourRight": "Integruojama su buhalterinėmis programomis",
+        "functionalitiesFiveLeft": "Taip pat nuskaito užsienio kalbomis išrašytas sąskaitas",
+        "functionalitiesFiveRight": "Saugi e. archyvo saugykla",
+        "functionalitiesSixLeft": "Prieiga prie sistemos iš bet kurios vietos",
+        "functionalitiesSixRight": "Sąskaitas galima siųsti el. paštu",
+        "functionalitiesSevenLeft": "eArchyvą galima perkelti į „Google Drive“",
+        "functionalitiesSevenRight": "Galite importuoti sąskaitas iš „Google Drive“",
+        "functionalitiesEightLeft": "Galite turėti tiek prisijungimų, kiek reikia",
+        "functionalitiesEightRight": "Mokate tik už apdorotas sąskaitas",
+        "scanItemOne": "„Robodam Scan“ nuskaito ir apdoroja šiuos duomenis iš sąskaitų:",
+        "scanItemOneText": "Sąskaitos numeris",
+        "scanItemOneText2":"Užsakymo numeris",
+        "scanItemOneText3":"Sąskaitos data",
+        "scanItemOneText4":"Apmokėjimo data / terminas",
+        "scanItemOneText5":"Pardavėjo ir pirkėjo duomenys",
+        "scanItemOneText6":"Suma be PVM",
+        "scanItemOneText7":"PVM suma",
+        "scanItemOneText8":"PVM procentas",
+        "scanItemOneText9":"Suma su PVM",
+        "scanItemOneText10":"Pažyma, ar sąskaita apmokėta grynaisiais",
+        "scanItemTwo":"Taip pat ištraukiami šie įmonės duomenys:",
+        "scanItemTwoText":"Įmonės pavadinimas / fizinio asmens vardas, pavardė",
+        "scanItemTwoText2":"Įmonės kodas / individualios veiklos numeris / asmens kodas",
+        "scanItemTwoText3":"PVM mokėtojo kodas",
+        "scanItemTwoText4":"Adresas",
+        "scanItemTwoText5":"Pardavėjo banko sąskaitos numeris",
+        "scanItemThree":"Įmonių duomenys visada tikrinami Registrų centruose (pagal šalį) ir, jei reikia, automatiškai pataisomi.",
+        "scanItemThreeText":"Net jei sąskaitoje informacija nepilna, „Robodam Scan“ vis tiek užtikrins, kad gautumėte tikslius ir atnaujintus įmonės duomenis.",
+        "scanItemFour":"Sistema automatiškai:",
+        "scanItemFourText":"Priskiria sumą tinkamam sąnaudų / pajamų kodui",
+        "scanItemFourText2":"Priskiria atitinkamą PVM klasifikatorių",
+        "scanItemFourText3":"Prideda sąskaitą į neuždarytą PVM laikotarpį"
     },
     "contacts": {
         "title": "Iškilus klausimams susisiekite nurodytais kontaktai"
@@ -74,5 +96,8 @@
         "normalText": "{blue}, registration successful!",
         "registeredUser": "Registered user",
         "signIn": "Sign in"
+    },
+    "privacy": {
+        "title": "Privatumo politika"
     }
 }
