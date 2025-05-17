@@ -4,6 +4,7 @@ import { useI18n } from "@/contexts/I18nContext";
 import { LINKS } from "@/constants/Links";
 import { useParams } from "next/navigation";
 import Check from "@/icons/Check.svg";
+import Image from "next/image";
 
 export default function Home() {
   const params = useParams();
@@ -26,6 +27,69 @@ export default function Home() {
     "home.howItemThree",
   ];
 
+  const logos = [
+    {
+      src: "/images/agnum.png",
+      alt: "agnum",
+      width: 112,
+      height: 42,
+    },
+    {
+      src: "/images/rivile.png",
+      alt: "rivile",
+      width: 92,
+      height: 83,
+    },
+    {
+      src: "/images/optimum.png",
+      alt: "optimum",
+      width: 118,
+      height: 36,
+    },
+    {
+      src: "/images/stekas.png",
+      alt: "stekas",
+      width: 94,
+      height: 31,
+    },
+    {
+      src: "/images/sap.png",
+      alt: "sap",
+      width: 110,
+      height: 63,
+    },
+    {
+      src: "/images/centas.png",
+      alt: "centas",
+      width: 131,
+      height: 38,
+    },
+    {
+      src: "/images/finvalda.png",
+      alt: "finvalda",
+      width: 60,
+      height: 71,
+    },
+    {
+      src: "/images/debetas.png",
+      alt: "debetas",
+      width: 127,
+      height: 34,
+    },
+    {
+      src: "/images/b1.png",
+      alt: "b1",
+      width: 123,
+      height: 123,
+    },
+    {
+      src: "/images/monet.png",
+      alt: "monet",
+      width: 118,
+      height: 35,
+    },
+  ];
+
   return (
     <>
       <section className="pt-[70px] lg:pt-[68px] px-5">
@@ -46,7 +110,14 @@ export default function Home() {
               {t("home.heroButton")}
             </Button>
           </div>
-          <div className="max-w-[630px] w-full rounded-[10px] h-[558px] bg-gray-100"></div>
+          <div className="max-w-[630px] w-full rounded-[10px]">
+            <Image
+              src="/images/hero.webp"
+              alt="hero"
+              width={630}
+              height={558}
+            />
+          </div>
         </div>
       </section>
 
@@ -76,7 +147,20 @@ export default function Home() {
         <h2 className="text-[30px] md:text-[40px] font-bold leading-[130%] text-center text-primary mb-[60px]">
           {t(`home.programsTitle`)}
         </h2>
-        <div className="max-w-[920px] w-full mx-auto"></div>
+        <div className="max-w-[920px] w-full mx-auto">
+          <ul className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 items-center">
+            {logos.map((item, index) => (
+              <li key={index} className="flex justify-center">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="pt-[160px] lg:pt-[150px] px-5">

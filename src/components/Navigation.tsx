@@ -3,8 +3,6 @@ import Mail from "@/icons/Mail.svg";
 import Phone from "@/icons/Phone.svg";
 
 export const Navigation = ({ lang }: { lang: "lt" }) => {
-  console.log(lang);
-
   return (
     <nav className="flex flex-col pt-24 md:pt-0">
       <ul className="flex flex-col w-full">

@@ -22,8 +22,6 @@ export const NavigationItems = ({ lang }: { lang: "lt" }) => {
       href: LINKS.CONTACTS,
     },
   ];
-  console.log(`/${lang}/${LINKS.PRICES}`);
-
   return (
     <>
       {nav.map((item) => (

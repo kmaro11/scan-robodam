@@ -27,8 +27,8 @@ export const Header = ({ lang }: Language) => {
 
         <div
           className={twMerge(
-            "absolute lg:hidden pt-[88px] px-4 inset-0 lg:pt-0 h-0 lg:h-auto opacity-0 bg-white lg:relative lg:mr-auto transition-all duration-300",
-            isOpen && "h-[100dvh] opacity-100"
+            "absolute pointer-events-none lg:hidden pt-[88px] px-4 inset-0 lg:pt-0 h-0 lg:h-auto opacity-0 bg-white lg:relative lg:mr-auto transition-all duration-300",
+            isOpen && "h-[100dvh] opacity-100 pointer-events-auto"
           )}
         >
           <Navigation lang={lang} />
