@@ -20,25 +20,25 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
             <div className="flex flex-col md:flex-row gap-x-7 gap-y-6">
               <a
                 href={`/${lang}/${LINKS.HOWITWORKS}`}
-                className="underline text-white text-lg leading-[100%]"
+                className="text-white text-lg leading-[100%] hover:underline"
               >
                 {t("navigation.howItWorks")}
               </a>
               <a
                 href={`/${lang}/${LINKS.PRICES}`}
-                className="text-white text-lg leading-[100%]"
+                className="text-white text-lg leading-[100%] hover:underline"
               >
                 {t("navigation.price")}
               </a>
               <a
                 href={`/${lang}/${LINKS.CONTACTS}`}
-                className="text-white text-lg leading-[100%]"
+                className="text-white text-lg leading-[100%] hover:underline"
               >
                 {t("navigation.contacts")}
               </a>
               <a
                 href={`/${lang}/${LINKS.PRIVACYPOLICY}`}
-                className="md:hidden text-white text-lg leading-[100%]"
+                className="md:hidden text-white text-lg leading-[100%] hover:underline"
               >
                 {t("navigation.privacyPolicy")}
               </a>
@@ -51,7 +51,7 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
               </div>
               <a
                 href={`/${lang}/${LINKS.PRIVACYPOLICY}`}
-                className="hidden md:inline text-white text-lg leading-[100%]"
+                className="hidden md:inline text-white text-lg leading-[100%] hover:underline"
               >
                 {t("navigation.privacyPolicy")}
               </a>
@@ -59,7 +59,7 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
             <div className="flex flex-col md:flex-row gap-y-6 px-4 md:px-0 gap-x-10">
               <a
                 href="mailto:admin@robodam.com"
-                className="text-white text-lg leading-[100%] flex items-center gap-4"
+                className="text-white text-lg leading-[100%] flex items-center gap-4 hover:underline"
               >
                 <div className="w-[22px] flex justify-center">
                   <Mail className="w-[22px] text-white" />
@@ -68,7 +68,7 @@ export const Footer = ({ lang }: { lang: "lt" }) => {
               </a>
               <a
                 href="tel:+37065749748"
-                className="text-white text-lg leading-[100%] flex items-center gap-4"
+                className="text-white text-lg leading-[100%] flex items-center gap-4 hover:underline"
               >
                 <div className="w-[22px] flex justify-center">
                   <Phone className="w-[16px] text-white" />

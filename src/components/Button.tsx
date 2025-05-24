@@ -23,16 +23,20 @@ export const Button: React.FC<ButtonAnchorProps> = ({
   let sizeClass = "";
   switch (variant) {
     case "primary":
-      variantClass = "bg-green-100 text-white";
+      variantClass =
+        "bg-green-100 text-white hover:bg-green hover:text-primary";
       break;
     case "secondary":
-      variantClass = "bg-white border-2 border-green text-white";
+      variantClass =
+        "bg-white border-2 border-green text-white hover:bg-green hover:text-primary";
       break;
     case "green":
-      variantClass = "bg-green text-primary";
+      variantClass =
+        "bg-green text-primary hover:bg-green-100 hover:text-white";
       break;
     case "green-dark":
-      variantClass = "bg-green-100 text-white";
+      variantClass =
+        "bg-green-100 text-white hover:bg-green hover:text-primary";
       break;
     case "borderless":
       variantClass = "px-0";
@@ -64,7 +68,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
         <a
           href={href}
           className={twMerge(
-            "flex items-center  justify-center text-center ",
+            "flex items-center  justify-center text-center transition-colors duration-300",
             sizeClass,
             variantClass,
             className,
@@ -77,7 +81,7 @@ export const Button: React.FC<ButtonAnchorProps> = ({
         <button
           type={type}
           className={twMerge(
-            "flex items-center justify-center text-center",
+            "flex items-center justify-center text-center transition-colors duration-300",
             sizeClass,
             variantClass,
             className,
